@@ -1,0 +1,12 @@
+CARTOLA CHAMPIONS - FLUTTER + SUPABASE
+
+1. Abra a pasta cartola_champions_flutter_pronto no VS Code.
+2. No Supabase, SQL Editor > New query: cole o conteudo de supabase/schema.sql e execute UMA VEZ.
+3. No terminal da pasta onde esta pubspec.yaml, rode:
+   flutter create . --project-name cartola_champions_flutter --platforms=android,web
+   flutter pub get
+   flutter run -d chrome --dart-define=SUPABASE_PUBLISHABLE_KEY=SUA_CHAVE_PUBLICA
+
+A URL do projeto ja esta configurada. Substitua SUA_CHAVE_PUBLICA pela chave publishable enviada no chat.
+
+ATENCAO: jogadores sao demonstrativos e a pontuacao real da Champions ainda depende de uma API de estatisticas e backend. Nao exponha chave service_role no Flutter.

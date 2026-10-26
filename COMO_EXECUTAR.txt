@@ -1,0 +1,20 @@
+CARTOLA CHAMPIONS — FLUTTER + SUPABASE
+
+1. Abra a pasta que contém pubspec.yaml no VS Code.
+2. Se android/ e web/ não existirem, execute:
+   flutter create . --project-name cartola_champions_flutter --platforms=android,web
+3. Execute:
+   flutter pub get
+   flutter test
+   flutter run -d chrome --dart-define=SUPABASE_PUBLISHABLE_KEY=SUA_CHAVE_PUBLICA
+
+SUPABASE
+- SQL Editor: execute supabase/schema.sql (pode repetir; políticas são recriadas).
+- Authentication > Providers > Email: habilite o provedor Email.
+- Não é necessário habilitar login anônimo.
+- Se a confirmação por e-mail estiver ligada, confirme o e-mail antes de entrar.
+
+IMPORTANTE
+- Jogadores são demonstrativos e não há pontuação automática real.
+- Não inclua service_role nem chaves secretas no Flutter.
+- Não foi possível validar a compilação aqui porque o SDK Flutter não está instalado.
